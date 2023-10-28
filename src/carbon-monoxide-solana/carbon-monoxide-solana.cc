@@ -9,18 +9,10 @@
  * 
  */
 
+#include <iostream>
 #include <solana_sdk.h>
-using namespace std;
 
 extern uint64_t entrypoint(const uint8_t *input) {
-    cout << "test solana" << endl;
+    std::cout << "testing";
     return SUCCESS;
-//   SolAccountInfo accounts[1];
-//   SolParameters params = (SolParameters){.ka = accounts};
-
-//   if (!sol_deserialize(input, &params, SOL_ARRAY_SIZE(accounts))) {
-//     return ERROR_INVALID_ARGUMENT;
-//   }
-
-//   return logging(&params);
 }
